@@ -176,6 +176,7 @@ main #coverimage img {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     #project-wrapper p {
         width: 50vw;
