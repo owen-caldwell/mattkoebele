@@ -3,6 +3,10 @@ body {
     margin: 1.5em;
     font-size: 1em;
     background-color: #f2e9e0;
+    overflow-x: hidden;
+}
+#metawrap {
+    display: block;
 }
 nav {
     display: flex;
@@ -109,7 +113,19 @@ main #coverimage img {
     position: absolute;
     bottom: 1.5em;
 }
+@media screen and (min-width: 1000px) {
+    body #metawrap div {
+        width: 1000px;
+    }
+}
 @media screen and (min-width: 876px){
+    #metawrap {
+        display: flex;
+        justify-content: center;
+    }
+    #metawrap div {
+         width: 850px;
+    }
     main {
         display: flex;
         margin-top: 6em;
@@ -139,6 +155,7 @@ main #coverimage img {
         visibility: visible;
         height: 2em;
         right: 0;
+        transition: none;
     }
     nav #links a {
         display: flex;
