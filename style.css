@@ -13,8 +13,7 @@ nav {
     top: 1.5em;
     z-index: 2;
     margin: 0;
-    width: 95%;
-    left: 2.5%;
+    width: 90vw;
     transition: .3s;
     padding-bottom: 0em;
     border-radius: 5px;
@@ -92,6 +91,21 @@ main #coverimage {
 main #coverimage img {
     width: 200px;
 }
+#text-content {
+    display: flex;
+    height: 80%;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+}
+#text-content p {
+    width: 350px;
+}
+#text-content span {
+    display: none;
+    font-size: .75em;
+    color: rgba(0, 0, 0, 0.75);
+}
 #contact {
     position: absolute;
     bottom: 1.5em;
@@ -99,17 +113,16 @@ main #coverimage img {
 @media screen and (min-width: 700px){
     main {
         display: flex;
-        width: 700px;
-        align-items:center;
+        margin-top: 6em;
+        align-items:flex-start;
         justify-content: flex-end;
         flex-direction: row-reverse;
     }
-    main p {
-        width: 350px;
-        padding-right: 5em;
+    main #coverimage {
+        height: 80%;
+        justify-content: flex-end;
     }
     #coverimage {
-        height: 70%;
         align-items: flex-end;
     }
     #hamburger {
@@ -163,6 +176,7 @@ main #coverimage img {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     #project-wrapper p {
         width: 50vw;
