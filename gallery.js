@@ -3,7 +3,7 @@ const images = gallery.querySelectorAll('div');
 let currentImage = 0;
 
 function changeImage(n) {
-  images[currentImage].classList.remove('active');
+  images[currentImage].style.display = "none";
   currentImage = (currentImage + n + images.length) % images.length;
-  images[currentImage].classList.add('active');
+  images[currentImage].style.display = "block";
 }
