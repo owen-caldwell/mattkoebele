@@ -2,7 +2,7 @@ let tg = true;
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("links");
 const head = document.getElementById("name");
-console.log("Hi! I'm running for the hamburger menu.");
+console.log("HAMBURGER");
 function toggleNav() {
     if (tg) {
         console.log("Nav opening.");

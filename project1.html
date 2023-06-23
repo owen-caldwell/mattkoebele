@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Koebele</title>
+    <title>matthew koebele</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" href="">
+    <link rel="icon" href="icon.png">
     <style>
       @media screen and (min-width: 876px){
         nav #links {
@@ -20,33 +20,53 @@
   <body>
     <nav>
       <div id="name">
-        <a href="index.html"><h1>Matthew Koebele</h1></a>
+        <a href="index.html"><h1>matthew koebele</h1></a>
         <img id="hamburger" src="hamburger.svg">
       </div>
       <div id="links">
-        <a href="film.html">Films</a>
-        <a href="reel.html">Reel</a>
-        <a href="bio.html">Bio</a>
+        <a href="photos.html">photos</a>
+        <a href="project1.html">films</a>
+        <a href="bio.html">bio</a>
       </div>
     </nav>
-    <div class="project-wrapper" id="pjwrapper1">
+    <div class="project-wrapper" id="pjwrapper1"> <!--HAL & JULIE-->
         <div id="gallery-wrapper">
-            <div id="gallery">
+            <div id="gallery" class="activegallery">
                 <div class="active">
-                    <img src="hj1_1000.webp">
+                    <img src="halJulie1_1000.webp" alt="Hal and Julie at the beach, sitting in beach chairs.">
                 </div>
                 <div>
-                    <img src="hj2_1000.webp">
+                    <img src="halJulie2_1000.webp" alt="Hal at a table looking at Julie out of frame.">
                 </div>
                 <div>
-                    <img src="hj3_1000.webp">
+                    <img src="halJulie3_1000.webp" alt="Julie sitting on a couch with her hands folded.">
                 </div>
                 <div>
-                    <img src="hj4_1000.webp">
+                    <img src="halJulie4_1000.webp" alt="Hal and Julie sitting at a table with coffee playing Scrabble.">
+                </div>
+                <div>
+                    <img src="halJulie5_1000.webp" alt="Hal and Julie sitting together on a bed. Julie is resting her head on Hal's shoulder.">
+                </div>
+                <div>
+                    <img src="halJulie6_1000.webp" alt="From behind: Hal and Julie at the beach, sitting in beach chairs.">
+                </div>
+                <div>
+                    <img src="halJulie7_1000.webp" alt="Hal and Julie standing in a living room, Hal is handing Julie a glass of wine.">
+                </div>
+                <div>
+                    <img src="halJulie8_1000.webp" alt="From left: Hal, Julie, Nancy, and John talking at a table.">
+                </div>
+                <div>
+                    <img src="halJulie9_1000.webp" alt="A view of a kitchen.">
                 </div>
             </div>
-            <div id="gallery-buttons">
+            <div id="gallery-buttons" class="activebuttons">
                 <button id="prev" onclick="changeImage(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"/></svg></button>
+                <img id="btn" src="selected.svg">
+                <img id="btn" src="unselected.svg">
+                <img id="btn" src="unselected.svg">
+                <img id="btn" src="unselected.svg">
+                <img id="btn" src="unselected.svg">
                 <img id="btn" src="unselected.svg">
                 <img id="btn" src="unselected.svg">
                 <img id="btn" src="unselected.svg">
@@ -86,7 +106,7 @@
             Shot on Kodak 250D 16mm.
         </p>
     </div>
-    <div class="project-wrapper" id="pjwrapper2">
+    <div class="project-wrapper" id="pjwrapper2"> <!--A DAY ALONE-->
       <div id="gallery-wrapper">
           <div id="gallery">
               <div class="active">
@@ -104,7 +124,7 @@
           </div>
           <div id="gallery-buttons">
               <button id="prev" onclick="changeImage(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"/></svg></button>
-              <img id="btn" src="unselected.svg">
+              <img id="btn" src="selected.svg">
               <img id="btn" src="unselected.svg">
               <img id="btn" src="unselected.svg">
               <img id="btn" src="unselected.svg">
@@ -130,7 +150,7 @@
           Shot on Kodak Tri-X 16mm.
       </p>
   </div>
-  <div class="project-wrapper" id="pjwrapper3">
+  <div class="project-wrapper" id="pjwrapper3"> <!--ROBSTER-->
     <div id="gallery-wrapper">
         <div id="gallery">
             <div class="active">
@@ -148,7 +168,7 @@
         </div>
         <div id="gallery-buttons">
             <button id="prev" onclick="changeImage(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"/></svg></button>
-            <img id="btn" src="unselected.svg">
+            <img id="btn" src="selected.svg">
             <img id="btn" src="unselected.svg">
             <img id="btn" src="unselected.svg">
             <img id="btn" src="unselected.svg">
@@ -193,24 +213,32 @@
         Shot on Kodak 200T 16mm.
     </p>
 </div>
-<div class="project-wrapper" id="pjwrapper4">
+<div class="project-wrapper" id="pjwrapper4"> <!--DAD COMES TO DINNER-->
   <div id="gallery-wrapper">
       <div id="gallery">
           <div class="active">
-              <img src="thumbnail.png">
+              <img src="dadComesToDinner1.webp" alt="">
           </div>
           <div>
-              <img src="thumbnail.png">
+              <img src="dadComesToDinner2.webp" alt="">
           </div>
           <div>
-              <img src="thumbnail.png">
+              <img src="dadComesToDinner3.webp" alt="">
           </div>
           <div>
-              <img src="thumbnail.png">
+              <img src="dadComesToDinner4.webp" alt="">
+          </div>
+          <div>
+              <img src="dadComesToDinner5.webp" alt="">
+          </div>
+          <div>
+              <img src="dadComesToDinner6.webp" alt="">
           </div>
       </div>
       <div id="gallery-buttons">
           <button id="prev" onclick="changeImage(-1)"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"/></svg></button>
+          <img id="btn" src="selected.svg">
+          <img id="btn" src="unselected.svg">
           <img id="btn" src="unselected.svg">
           <img id="btn" src="unselected.svg">
           <img id="btn" src="unselected.svg">
@@ -246,5 +274,6 @@
     <script src="hamburger.js"></script>
     <script src="gallery.js"></script>
     <script src="film.js"></script>
+    <script src="linkalternator.js"></script>
   </body>
 </html>
