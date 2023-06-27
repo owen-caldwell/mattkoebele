@@ -27,6 +27,10 @@ button1.addEventListener('click', ()=> {
     project2.style.display = "none";
     project3.style.display = "none";
     project4.style.display = "none";
+    button1.classList.add("btnClkd");
+    button2.classList.remove("btnClkd");
+    button3.classList.remove("btnClkd");
+    button4.classList.remove("btnClkd");
 
 })
 button2.addEventListener('click', ()=> {
@@ -40,6 +44,10 @@ button2.addEventListener('click', ()=> {
     project2.style.display = "flex";
     project3.style.display = "none";
     project4.style.display = "none";
+    button1.classList.remove("btnClkd");
+    button2.classList.add("btnClkd");
+    button3.classList.remove("btnClkd");
+    button4.classList.remove("btnClkd");
 
 })
 button3.addEventListener('click', ()=> {
@@ -53,7 +61,10 @@ button3.addEventListener('click', ()=> {
     project2.style.display = "none";
     project3.style.display = "flex";
     project4.style.display = "none";
-
+    button1.classList.remove("btnClkd");
+    button2.classList.remove("btnClkd");
+    button3.classList.add("btnClkd");
+    button4.classList.remove("btnClkd");
 })
 button4.addEventListener('click', ()=> {
     for (let i = 0; i < galleries.length; i++) {
@@ -66,5 +77,9 @@ button4.addEventListener('click', ()=> {
     project2.style.display = "none";
     project3.style.display = "none";
     project4.style.display = "flex";
+    button1.classList.remove("btnClkd");
+    button2.classList.remove("btnClkd");
+    button3.classList.remove("btnClkd");
+    button4.classList.add("btnClkd");
 
 })

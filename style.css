@@ -168,15 +168,10 @@ main {
     position: absolute;
     bottom: 1.5em;
 }
-@media screen and (min-width: 1000px) {
-    body #metawrap div {
-        width: 800px;
-    }
-}
 @media screen and (min-width: 876px){
     #metawrap {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
     main {
         display: flex;
@@ -291,11 +286,11 @@ main {
     padding: 3px 7px 3px 7px;
     margin: auto 1.5em auto 0;
     border-radius: 5px;
-    font-family: 'Archivo';
+    font-family: Helvetica;
     font-size: .9em;
-    background:none;
+    background-color: #f2e9e0;
 }
-#project-buttons button:hover {
+#project-buttons button:hover, #project-buttons .btnClkd {
     color: #f2e9e0;
     background-color: black;
 }
