@@ -28,7 +28,7 @@ body {
     height: 70%;
     margin: 1.5em;
     font-family: Helvetica;
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: -.015em;
     background-color: #f2e9e0;
     overflow-x: hidden;
@@ -188,7 +188,7 @@ main {
         flex-direction: column;
     }
     main #coverimage img {
-        width: 330px;
+        width: 400px;
     }
     body #film-wrapper {
         justify-content: flex-start;
