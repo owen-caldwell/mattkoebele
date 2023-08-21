@@ -1,28 +1,30 @@
-let tg = true;
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("links");
-const head = document.getElementById("name");
-console.log("HAMBURGER");
-function toggleNav() {
-    if (tg) {
-        console.log("Nav opening.");
-        tg = false;
-        hamburger.src = "close.svg";
-        nav.style.visibility = "visible";
-        nav.style.transitionDelay = ".1s";
-        nav.style.height = "6em";
-        nav.style.paddingBottom = ".5em";
-    }
-    else {
-        console.log("Nav closing.");
-        tg = true;
-        hamburger.src = "hamburger.svg";
-        nav.style.visibility = "hidden";
-        nav.style.transitionDelay = "0s";
-        nav.style.height = "0em";
-        nav.style.paddingBottom = "0em";
-    };
-    
-};
+let nav = document.querySelector(".mobile-nav");
+let hamburger = document.querySelector("#hamburger");
+let content = document.querySelector(".index-wrapper");
+let filmcontent = document.querySelector(".indexfilm-wrapper");
+let tree = document.querySelector("#tree");
+let isOpen = false;
 
-hamburger.addEventListener("click", toggleNav);
+hamburger.addEventListener("click", () => {
+    if (isOpen === false) {
+        isOpen = true;
+        content.style.visibility = "hidden";
+        nav.style.transition = "height .3s ease";
+        nav.style.height = "500px";
+        hamburger.src = "close.svg";
+        try{tree.src = "navtree.png";}
+        catch{}
+        try {filmcontent.style.display = "none";}
+        catch{}
+    } else {
+        isOpen = false
+        content.style.visibility = "visible";
+        nav.style.transition = "height 0s ease";
+        nav.style.height = "0";
+        hamburger.src = "hamburger.svg";
+        try{tree.src = "tree.png";}
+        catch{}
+        try {filmcontent.style.display = "block";}
+        catch{}
+    }
+});

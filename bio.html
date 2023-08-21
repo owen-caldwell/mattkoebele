@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="rangefinder, camera, film, etc"> <!--KEYWORDS for SEO-->
-    <title>matthew koebele</title>
+<head>
+    <!-- Canonical link to help search engines -->
+    <link rel="canonical" href="/" />
+
+    <!-- Basic meta elements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name=robots content="index,follow">
+    <meta name="description" content="SHORT_DESCRIPTION">
+    <meta name="author" content="Matthew Koebele">
+    <meta name='url' content='https://www.matthewkoebele.com/' />
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="IMAGE_TO_USE" />
+    <meta property="og:description" content="DESCRIPTION">
+    <meta property="og:site_name" content="SITE_NAME" />
+    <title>
+        
+       matthew koebele
+        
+    </title>
+    <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon.png">
     <style>
-        main {
-            overflow: hidden;
+        .tree-wrapper {
+            align-items: flex-end;
+        }
+        .tree-wrapper img {
+            max-height: 60vh;
+        }
+        @media screen and (min-width: 750px) {
+            .tree-wrapper {
+                align-items: flex-start;
+                margin-left: 3em;
+            }
         }
     </style>
-  </head>
-  <body>
-    <div id="metawrap">
-      <div>
-        <nav>
-          <div id="name">
-            <a href="index.html"><h1>matthew koebele</h1></a>
-            <img id="hamburger" src="hamburger.svg">
-          </div>
-          <div id="links">
-            <a href="photos.html">photos</a>
-            <a href="film.html">films</a>
-            <a href="bio.html">bio</a>
-          </div>
-        </nav>
-        <main>
-          <div id="coverimage">
-            <img src="mk2.png">
-            <span>Sketches by <a href="yneslopez.com">Ynes Lopez</a></span>
-          </div>
-          <div id="text-content">
-            <p>
-                <br>
-                <br>
-                <br>
-                Aut sequi deserunt At suscipit facilis aut dignissimos nulla ut minus sint.<br>
-                <br>
-                Sed quia optio quo doloremque asperiores est autem quia sit commodi officia.
-                Qui ullam eveniet vel maxime rerum in excepturi dolorem.<br>
-                <br>
-                - Matthew
-            </p>
-            <span>
-              New York, NY <br>
-              <br>
-              Sketch by Ynes Lopez
-            </span>
-        </main>
-        <span id="contact">
-          <div id="links">
-            <a href="photos.html">photos</a>
-            <a href="project1.html">films</a>
-            <a href="bio.html">bio</a>
-          </div>
-        </span>
-      </div>
-    </div>
-  </body>
-  <script src="hamburger.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="header-wrapper">
+                <span>matthew koebele</span>
+                <img id="hamburger" src="hamburger.svg">
+            </section>
+            <nav class="mobile-nav">
+                <ul class="mnav-wrapper">
+                    <span id="mfilm-dd">film <img src="arrow-expand.svg"></span>
+                    <div class="mfilm-wrapper">
+                        <a href="robster" class="f-links">Robster</a>
+                        <a href="adayalone" class="f-links">a Day Alone</a>
+                        <a href="halandjulie" class="f-links">Hal and Julie</a>
+                        <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                    </div>
+                    <a>photos</a>
+                    <a>bio</a>
+                </ul>
+            </nav>
+        </header>
+        <section class="index-content">
+            <div class="index-wrapper">
+                <p>
+                    By in no ecstatic wondered disposal my speaking.<br>
+                     Direct wholly valley or uneasy it at really.<br>
+                    <br>
+                    contact<br>
+                    mattkoebele@gmail.com
+                </p>
+                <nav class="desktop-nav">
+                    <ul class="dnav-wrapper">
+                        <span id="dfilm-dd">film <img src="arrow-expand.svg"></span>
+                        <div class="dfilm-wrapper">
+                            <a href="robster" class="f-links">Robster</a>
+                            <a href="adayalone" class="f-links">a Day Alone</a>
+                            <a href="halandjulie" class="f-links">Hal and Julie</a>
+                            <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                        </div>
+                        <a>photos</a>
+                        <a>bio</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="tree-wrapper mk2">
+                <img id="tree" src="mk2.png">
+                <span>Sketches by <a href="yneslopez.com">Ynes Lopez</a></span>
+            </div>
+        </section>
+    </main>
+    <script src="hamburger.js"></script>
+    <script src="expand.js"></script>
+</body>
 </html>
