@@ -65,6 +65,9 @@ main {
     display: grid;
     grid-template-rows: 30% 65%;
 }
+.index-wrapper p a {
+    color: black;
+}
 .indexfilm-wrapper {overflow-x: hidden;}
 .gallery-wrapper {
     max-width: 770px;
@@ -127,6 +130,7 @@ main {
     }
     .index-wrapper p {
         display: flex;
+        flex-direction: column;
         align-items: flex-end;
     }
     .desktop-nav {
