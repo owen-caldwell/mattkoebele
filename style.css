@@ -1,7 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rosarivo:ital@0;1&display=swap');
 body {
+    font-family: 'Rosario';
     margin: 0;
-    font-family: Helvetica;
+    background-color: rgba(242, 233, 224);
 }
 main {
     display: grid;
@@ -15,6 +16,7 @@ main {
     height: 1.5em;
 }
 .header-wrapper span a {
+    font-family: 'Rosarivo';
     color: black;
     text-decoration: none;
 }
@@ -65,7 +67,7 @@ main {
 }
 .indexfilm-wrapper {overflow-x: hidden;}
 .gallery-wrapper {
-    max-width: 850px;
+    max-width: 770px;
     overflow-x: hidden;
 }
 .gallery {
@@ -88,7 +90,7 @@ main {
     justify-content: flex-end;
 }
 .tree-wrapper img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
 }
 .tree-wrapper span, .tree-wrapper span a {
@@ -116,6 +118,7 @@ main {
         transition: transform .3s;
     }
     .index-content {
+        max-width: 1300px;
         grid-template-rows: none;
         grid-template-columns: 35% 65%;
     }
@@ -132,7 +135,7 @@ main {
         align-items: flex-end;
     }
     .dnav-wrapper {
-        background-color: white;
+        background-color: rgba(242, 233, 224);
         display: flex;
         padding: 0;
         align-items: flex-end;
@@ -155,11 +158,12 @@ main {
         margin: 1em 0;
     }
     .tree-wrapper {
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-end;
     }
     .tree-wrapper img {
-        max-height: 70vh;
+        max-width: none;
+        max-height: 80vh;
     }
     .text-wrapper {
         display: flex;

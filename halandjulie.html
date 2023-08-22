@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Canonical link to help search engines -->
+    <link rel="canonical" href="/" />
+
+    <!-- Basic meta elements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name=robots content="index,follow">
+    <meta name="description" content="SHORT_DESCRIPTION">
+    <meta name="author" content="Matthew Koebele">
+    <meta name='url' content='https://www.matthewkoebele.com/' />
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="IMAGE_TO_USE" />
+    <meta property="og:description" content="DESCRIPTION">
+    <meta property="og:site_name" content="SITE_NAME" />
+    <title>
+        
+       matthew koebele
+        
+    </title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .index-content {
+            grid-template-rows: none;
+        }
+        @media screen and (min-width: 750px) {
+            .indexfilm-wrapper {overflow-y: auto}
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .indexfilm-wrapper::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .indexfilm-wrapper {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="header-wrapper">
+                <span><a href="index">matthew koebele</a></span>
+                <img id="hamburger" src="hamburger.svg">
+            </section>
+            <nav class="mobile-nav">
+                <ul class="mnav-wrapper">
+                    <span id="mfilm-dd">film <img src="arrow-expand.svg"></span>
+                    <div class="mfilm-wrapper">
+                        <a href="robster" class="f-links">Robster</a>
+                        <a href="adayalone" class="f-links">a Day Alone</a>
+                        <a href="halandjulie" class="f-links">Hal and Julie</a>
+                        <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                    </div>
+                    <a>photos</a>
+                    <a>bio</a>
+                </ul>
+            </nav>
+        </header>
+        <section class="index-content">
+            <div class="index-wrapper">
+                <p></p>
+                <nav class="desktop-nav">
+                    <ul class="dnav-wrapper">
+                        <span id="dfilm-dd">film <img src="arrow-expand.svg"></span>
+                        <div class="dfilm-wrapper">
+                            <a href="robster" class="f-links">Robster</a>
+                            <a href="adayalone" class="f-links">a Day Alone</a>
+                            <a href="halandjulie" class="f-links">Hal and Julie</a>
+                            <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                        </div>
+                        <a>photos</a>
+                        <a>bio</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="indexfilm-wrapper">
+                <div class="gallery-wrapper">
+                    <div onclick="clearInterval(refreshIntervalID)" class="gallery">
+                        <img src="haljulie_1_1000.webp">
+                        <img src="haljulie_2_1000.webp">
+                        <img src="haljulie_3_1000.webp">
+                        <img src="haljulie_4_1000.webp">
+                        <img src="haljulie_5_1000.webp">
+                        <img src="haljulie_6_1000.webp">
+                        <img src="haljulie_7_1000.webp">
+                        <img src="haljulie_8_1000.webp">
+                        <img src="haljulie_9_1000.webp">
+                    </div>
+                    <span id="gallery-counter">
+                        <div id="num">#</div>/<div id="total">total</div>
+                    </span>
+                </div>
+                <div class="text-wrapper">
+                    <p class="txt tpt1">
+                        <span>HAL & JULIE</span><br>
+                        <br>
+                        <u>CAST:</u><br>
+                        Brent Langdon as "Hal"<br>
+                        Kristine Nielsen as "Julie"<br>
+                        Cynthia Koebele as "Nancy"<br>
+                        John Tohill as "John"<br>
+                        <br>
+                        <u>CREW:</u><br>
+                        Writer/Director: Matthew Koebele<br>
+                        Producers: Hanna Dzaferovic and Ryan Rosenthal<br>
+                        Associate Producers: Cole Fletchall-Silva and Matthew Koebele<br>
+                        Cinematographer: Cole Fletchall-Silva<br>
+                        Editor: Case Avron<br>
+                    </p>
+                    <p class="txt tpt2">
+                        Production Design: Ynes Lopez<br>
+                        1st AD: Taylor Richardson<br>
+                        1st AC/Loader: Alexandra Mettler<br>
+                        Gaffer: Frank Yu<br>
+                        Key Grip: Matan Hamam<br>
+                        Sound Mixer: Addison Knies<br>
+                        Boom Operator: Aiden Chavis<br>
+                        Post Sound Supervisor: Yuming Zhang<br>
+                        Foley Artist: Yuming Zhang<br>
+                        Post Sound Mixer: Jacob Boblitt<br>
+                        Script Supervisor: Case B. Avron<br>
+                        <br>
+                        <u>Special Thanks</u> to Anne Hubbell and David Rosfeld.
+                        <br>
+                        Shot on Kodak 250D 16mm.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="hamburger.js"></script>
+    <script src="expand.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
