@@ -70,6 +70,7 @@ main {
 .index-wrapper p a {
     color: black;
 }
+.text-wrapper {margin-bottom: 5em;}
 .indexfilm-wrapper {overflow-x: hidden;}
 .gallery-wrapper {
     max-width: 770px;
@@ -98,7 +99,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .tree-wrapper img {
     max-width: 300px;
@@ -184,6 +185,7 @@ main {
         max-height: 80vh;
     }
     .text-wrapper {
+        margin-bottom: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 775px;
