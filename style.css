@@ -142,6 +142,7 @@ main {
         background-color: rgba(242, 233, 224);
         display: flex;
         padding: 0;
+        margin: 0;
         align-items: flex-end;
     }
     .dnav-wrapper a, .dnav-wrapper span {
