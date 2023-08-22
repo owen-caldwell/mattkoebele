@@ -133,6 +133,7 @@ main {
         flex-direction: column;
         justify-content: flex-end;
     }
+    
     .desktop-nav {
         display: flex;
         width: 100%;
@@ -171,7 +172,8 @@ main {
         max-height: 80vh;
     }
     .text-wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 775px;
         flex-direction: row;
     }
