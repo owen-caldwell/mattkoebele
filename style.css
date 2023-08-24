@@ -70,8 +70,6 @@ main {
 .index-wrapper p a {
     color: black;
 }
-.text-wrapper {margin-bottom: 5em;}
-.indexfilm-wrapper {overflow-x: hidden;}
 .gallery-wrapper {
     max-width: 770px;
     overflow-x: hidden;
@@ -99,7 +97,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .tree-wrapper img {
     max-width: 300px;
