@@ -19,4 +19,4 @@ function nextSlide() {
 }
 goToSlide(0);
 var refreshIntervalID = setInterval(nextSlide, 5000); // Auto scroll every 5 seconds
-slideshow.addEventListener('click', nextSlide);
+slideshow.addEventListener('mousedown', nextSlide);

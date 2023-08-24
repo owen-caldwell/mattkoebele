@@ -6,14 +6,22 @@ body {
 }
 main {
     display: grid;
-    margin: 1.5em;
+    margin: 0 1.5em 1.5em 1.5em;
     height: calc(100vh - 3em);
     grid-template-rows: 10% 90%;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 1.5em 0 .5em 0;
+    background-color: rgba(242, 233, 224);
+    height: 1.5em;
 }
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    height: 1.5em;
+    height: 100%;
 }
 .header-wrapper span a {
     font-family: 'Rosarivo';
@@ -98,6 +106,7 @@ main {
     flex-direction: column;
     width: 100%;
     justify-content: flex-start;
+    align-items: flex-end;
 }
 .tree-wrapper img {
     max-width: 300px;
