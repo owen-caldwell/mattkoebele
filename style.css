@@ -198,4 +198,16 @@ header {
         max-width: 775px;
         flex-direction: row;
     }
+    .photos-gallery {
+        width: 100%;
+    }
+    .photo-container {
+        display: flex;
+        max-width: 100%;
+    }
+    .photo-container img {
+        max-height: 70vh;
+        margin: 1em;
+    }
+    
 }

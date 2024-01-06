@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Canonical link to help search engines -->
+    <link rel="canonical" href="/" />
+
+    <!-- Basic meta elements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner.">
+    <meta name="author" content="Matthew Koebele">
+    <meta name='url' content='https://www.matthewkoebele.com/photos' />
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Matthew Koebele" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.matthewkoebele.com/photos" />
+    <meta property="og:description" content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner.">
+    <meta property="og:image" content="https://matthewkoebele.com/media/photopage/photopage_24_1000.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="667" />
+    <meta property="og:image:alt" content="Robert, played by Hank Johnstone in a red sweater looking worried." />
+    <title>
+        
+       matthew koebele
+        
+    </title>
+    <link rel="icon" type="image/x-icon" href="media/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .photo-gallery {
+            flex-direction: column;
+        }
+        main {
+            display: block;
+            height: 100%;
+        }
+        .indexfilm-wrapper {
+            height: 100%;
+        }
+        .index-content {
+            grid-template-columns: 0% 100%;
+            grid-template-rows: none;
+            margin: 1.5em;
+        }
+        .photo-container img {
+            margin: 2em 0;
+            max-width: 100%;
+        }
+        .desktop-nav {z-index: 5;}
+        .hangleft, .hangcenter, .hangright, .spacearound, .spacebetween {
+            justify-content: center;
+        }
+        @media screen and (min-width: 750px) {
+            main {
+                display: grid;
+                height: calc(100vh - 3em);
+            }
+                .photo-container img {
+                margin: 1em;
+                max-width: none;
+            }
+            .indexfilm-wrapper {overflow-y: auto}
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .indexfilm-wrapper::-webkit-scrollbar {
+                display: none;
+            }
+            .index-content {max-width: 90vw;}
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .indexfilm-wrapper {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                max-width: 100%;
+                width: 100%;
+            }
+            .desktop-nav {pointer-events: none;}
+            .dnav-wrapper {
+                margin-bottom: -1em;
+                padding: 1em;
+                width: 95vw;
+                pointer-events: all;
+            }
+            main {overflow: hidden;}
+            .hangleft {justify-content: flex-start;}
+            .hangcenter {justify-content: center;}
+            .hangright {justify-content: flex-end;}
+            .spacearound {justify-content: space-around;}
+            .spacebetween {justify-content: space-between;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="header-wrapper">
+                <span><a href="index">matthew koebele</a></span>
+                <img id="hamburger" src="media/hamburger.svg">
+            </section>
+            <nav class="mobile-nav">
+                <ul class="mnav-wrapper">
+                    <span id="mfilm-dd">film <img src="media/arrow-expand.svg"></span>
+                    <div class="mfilm-wrapper">
+                        <a href="halandjulie" class="f-links">Hal and Julie</a>
+                        <a href="robster" class="f-links">Robster</a>
+                        <a href="right-to-remain-silent" class="f-links">Right to Remain Silent</a>
+                        <a href="rooftop" class="f-links">Rooftop</a>
+                        <a href="adayalone" class="f-links">a Day Alone</a>
+                        <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                    </div>
+                    <a href="photos">photos</a>
+                    <a href="bio">bio</a>
+                </ul>
+            </nav>
+        </header>
+        <section class="index-content">
+            <div class="index-wrapper">
+                <p></p> <!-- important spacer -->
+                <nav class="desktop-nav">
+                    <ul class="dnav-wrapper">
+                        <span id="dfilm-dd">film <img src="media/arrow-expand.svg" alt="arrow-expand"></span>
+                        <div class="dfilm-wrapper">
+                            <a href="halandjulie" class="f-links">Hal and Julie</a>
+                            <a href="robster" class="f-links">Robster</a>
+                            <a href="right-to-remain-silent" class="f-links">Right to Remain Silent</a>
+                            <a href="rooftop" class="f-links">Rooftop</a>
+                            <a href="adayalone" class="f-links">a Day Alone</a>
+                            <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+                        </div>
+                        <a href="photos">photos</a>
+                        <a href="bio">bio</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="indexfilm-wrapper">
+                <div class="photos-gallery">
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_1_450.webp 450w, media/photopage/photopage_1_750.webp 750w, media/photopage/photopage_1_1000.webp 1000w"
+                        src="media/photopage/photopage_1_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacebetween"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_29_450.webp 450w, media/photopage/photopage_29_750.webp 750w, media/photopage/photopage_29_1000.webp 1000w"
+                        src="media/photopage/photopage_29_1000.webp"
+                        loading="lazy"
+                        >
+                        <img
+                        style="margin-top: 5em"
+                        srcset="media/photopage/photopage_2_450.webp 450w, media/photopage/photopage_2_750.webp 750w, media/photopage/photopage_2_1000.webp 1000w"
+                        src="media/photopage/photopage_2_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_28_450.webp 450w, media/photopage/photopage_28_750.webp 750w, media/photopage/photopage_28_1000.webp 1000w"
+                        src="media/photopage/photopage_28_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 11em"
+                        srcset="media/photopage/photopage_34_450.webp 450w, media/photopage/photopage_34_750.webp 750w, media/photopage/photopage_34_1000.webp 1000w"
+                        src="media/photopage/photopage_34_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_50_450.webp 450w, media/photopage/photopage_50_750.webp 750w, media/photopage/photopage_50_1000.webp 1000w"
+                        src="media/photopage/photopage_50_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="max-width: 40%;
+                        margin-top: 8em;"
+                        srcset="media/photopage/photopage_51_450.webp 450w, media/photopage/photopage_51_750.webp 750w, media/photopage/photopage_51_1000.webp 1000w"
+                        src="media/photopage/photopage_51_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_35_450.webp 450w, media/photopage/photopage_35_750.webp 750w, media/photopage/photopage_35_1000.webp 1000w"
+                        src="media/photopage/photopage_35_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin: 5em 0;"
+                        srcset="media/photopage/photopage_33_450.webp 450w, media/photopage/photopage_33_750.webp 750w, media/photopage/photopage_33_1000.webp 1000w"
+                        src="media/photopage/photopage_33_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacearound"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 10em;"
+                        srcset="media/photopage/photopage_46_450.webp 450w, media/photopage/photopage_46_750.webp 750w, media/photopage/photopage_46_1000.webp 1000w"
+                        src="media/photopage/photopage_46_1000.webp"
+                        loading="lazy"
+                        >
+                        <img
+                        srcset="media/photopage/photopage_48_450.webp 450w, media/photopage/photopage_48_750.webp 750w, media/photopage/photopage_48_1000.webp 1000w"
+                        src="media/photopage/photopage_48_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_47_450.webp 450w, media/photopage/photopage_47_750.webp 750w, media/photopage/photopage_47_1000.webp 1000w"
+                        src="media/photopage/photopage_47_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 8em;"
+                        srcset="media/photopage/photopage_13_450.webp 450w, media/photopage/photopage_13_750.webp 750w, media/photopage/photopage_13_1000.webp 1000w"
+                        src="media/photopage/photopage_13_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_14_450.webp 450w, media/photopage/photopage_14_750.webp 750w, media/photopage/photopage_14_1000.webp 1000w"
+                        src="media/photopage/photopage_14_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 15em;"
+                        srcset="media/photopage/photopage_43_450.webp 450w, media/photopage/photopage_43_750.webp 750w, media/photopage/photopage_43_1000.webp 1000w"
+                        src="media/photopage/photopage_43_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacearound" style="margin-top: 10em"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_45_450.webp 450w, media/photopage/photopage_45_750.webp 750w, media/photopage/photopage_45_1000.webp 1000w"
+                        src="media/photopage/photopage_45_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacebetween"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 6em;"
+                        srcset="media/photopage/photopage_42_450.webp 450w, media/photopage/photopage_42_750.webp 750w, media/photopage/photopage_42_1000.webp 1000w"
+                        src="media/photopage/photopage_42_1000.webp"
+                        loading="lazy"
+                        >
+                        <img
+                        style="margin-top: 10em;"
+                        srcset="media/photopage/photopage_44_450.webp 450w, media/photopage/photopage_44_750.webp 750w, media/photopage/photopage_44_1000.webp 1000w"
+                        src="media/photopage/photopage_44_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_10_450.webp 450w, media/photopage/photopage_10_750.webp 750w, media/photopage/photopage_10_1000.webp 1000w"
+                        src="media/photopage/photopage_10_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacearound"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_4_450.webp 450w, media/photopage/photopage_4_750.webp 750w, media/photopage/photopage_4_1000.webp 1000w"
+                        src="media/photopage/photopage_4_1000.webp"
+                        loading="lazy"
+                        >
+                        <img
+                        style="margin-top: 7em;"
+                        srcset="media/photopage/photopage_5_450.webp 450w, media/photopage/photopage_5_750.webp 750w, media/photopage/photopage_5_1000.webp 1000w"
+                        src="media/photopage/photopage_5_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_17_450.webp 450w, media/photopage/photopage_17_750.webp 750w, media/photopage/photopage_17_1000.webp 1000w"
+                        src="media/photopage/photopage_17_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: -7em;"
+                        srcset="media/photopage/photopage_18_450.webp 450w, media/photopage/photopage_18_750.webp 750w, media/photopage/photopage_18_1000.webp 1000w"
+                        src="media/photopage/photopage_18_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_36_450.webp 450w, media/photopage/photopage_36_750.webp 750w, media/photopage/photopage_36_1000.webp 1000w"
+                        src="media/photopage/photopage_36_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_11_450.webp 450w, media/photopage/photopage_11_750.webp 750w, media/photopage/photopage_11_1000.webp 1000w"
+                        src="media/photopage/photopage_11_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container spacebetween"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_54_450.webp 450w, media/photopage/photopage_54_750.webp 750w, media/photopage/photopage_54_1000.webp 1000w"
+                        src="media/photopage/photopage_54_1000.webp"
+                        loading="lazy"
+                        >
+                        <img
+                        srcset="media/photopage/photopage_49_450.webp 450w, media/photopage/photopage_49_750.webp 750w, media/photopage/photopage_49_1000.webp 1000w"
+                        src="media/photopage/photopage_49_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_57_450.webp 450w, media/photopage/photopage_57_750.webp 750w, media/photopage/photopage_57_1000.webp 1000w"
+                        src="media/photopage/photopage_57_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 6em;"
+                        srcset="media/photopage/photopage_56_450.webp 450w, media/photopage/photopage_56_750.webp 750w, media/photopage/photopage_56_1000.webp 1000w"
+                        src="media/photopage/photopage_56_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_9_450.webp 450w, media/photopage/photopage_9_750.webp 750w, media/photopage/photopage_9_1000.webp 1000w"
+                        src="media/photopage/photopage_9_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 5em;"
+                        srcset="media/photopage/photopage_6_450.webp 450w, media/photopage/photopage_6_750.webp 750w, media/photopage/photopage_6_1000.webp 1000w"
+                        src="media/photopage/photopage_6_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_8_450.webp 450w, media/photopage/photopage_8_750.webp 750w, media/photopage/photopage_8_1000.webp 1000w"
+                        src="media/photopage/photopage_8_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_15_450.webp 450w, media/photopage/photopage_15_750.webp 750w, media/photopage/photopage_15_1000.webp 1000w"
+                        src="media/photopage/photopage_15_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangleft"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: -5em;"
+                        srcset="media/photopage/photopage_16_450.webp 450w, media/photopage/photopage_16_750.webp 750w, media/photopage/photopage_16_1000.webp 1000w"
+                        src="media/photopage/photopage_16_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangright"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_24_450.webp 450w, media/photopage/photopage_24_750.webp 750w, media/photopage/photopage_24_1000.webp 1000w"
+                        src="media/photopage/photopage_24_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        srcset="media/photopage/photopage_52_450.webp 450w, media/photopage/photopage_52_750.webp 750w, media/photopage/photopage_52_1000.webp 1000w"
+                        src="media/photopage/photopage_52_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                    <div class="photo-container hangcenter"> <!-- make 3 classes: hangleft - shifts photos left, hangcenter - places photos in the center, hangright - shifts photos right.-->
+                        <img
+                        style="margin-top: 5em;"
+                        srcset="media/photopage/photopage_22_450.webp 450w, media/photopage/photopage_22_750.webp 750w, media/photopage/photopage_22_1000.webp 1000w"
+                        src="media/photopage/photopage_22_1000.webp"
+                        loading="lazy"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="hamburger.js"></script>
+    <script src="expand.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

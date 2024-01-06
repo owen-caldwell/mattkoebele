@@ -11,8 +11,8 @@ hamburger.addEventListener("click", () => {
         content.style.visibility = "hidden";
         nav.style.transition = "height .3s ease";
         nav.style.height = "500px";
-        hamburger.src = "close.svg";
-        try{tree.src = "navtree.png";}
+        hamburger.src = "media/close.svg";
+        try{tree.src = "media/navtree.png";}
         catch{}
         try {filmcontent.style.display = "none";}
         catch{}
@@ -21,8 +21,8 @@ hamburger.addEventListener("click", () => {
         content.style.visibility = "visible";
         nav.style.transition = "height 0s ease";
         nav.style.height = "0";
-        hamburger.src = "hamburger.svg";
-        try{tree.src = "tree.png";}
+        hamburger.src = "media/hamburger.svg";
+        try{tree.src = "media/tree.png";}
         catch{}
         try {filmcontent.style.display = "block";}
         catch{}
