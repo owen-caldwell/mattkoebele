@@ -60,7 +60,7 @@ header {
 .mfilm-wrapper {
     display: flex;
     margin: 0 0 2em 5px;
-    height: 220px;
+    height: 260px;
     transition: height .3s ease;
     overflow: hidden;
     flex-direction: column;
