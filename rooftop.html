@@ -1,132 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-- Canonical link to help search engines -->
     <link rel="canonical" href="/" />
 
     <!-- Basic meta elements -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner.">
-    <meta name="author" content="Matthew Koebele">
-    <meta name='url' content='https://www.matthewkoebele.com/robster' />
+    <meta
+      name="description"
+      content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner."
+    />
+    <meta name="author" content="Matthew Koebele" />
+    <meta name="url" content="https://www.matthewkoebele.com/robster" />
     <!-- Enable responsiveness on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
     <!-- Open Graph metadata -->
     <meta property="og:title" content="Matthew Koebele" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.matthewkoebele.com/robster" />
-    <meta property="og:description" content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner.">
-    <meta property="og:image" content="https://matthewkoebele.com/media/robster_10_1000.webp" />
+    <meta
+      property="og:description"
+      content="New York based writer, photographer, and filmmaker. Director of Hal & Julie, Robster, a Day Alone, and Dad Comes to Dinner."
+    />
+    <meta
+      property="og:image"
+      content="https://matthewkoebele.com/media/robster_10_1000.webp"
+    />
     <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:width" content="1000" />
     <meta property="og:image:height" content="599" />
-    <meta property="og:image:alt" content="Robert, played by Hank Johnstone in a red sweater looking worried." />
-    <title>
-        
-       matthew koebele
-        
-    </title>
-    <link rel="icon" type="image/x-icon" href="media/icon.png">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      property="og:image:alt"
+      content="Robert, played by Hank Johnstone in a red sweater looking worried."
+    />
+    <title>matthew koebele</title>
+    <link rel="icon" type="image/x-icon" href="media/icon.png" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .indexfilm-wrapper {height: 100%;}
-        .index-content {
-            grid-template-rows: none;
+      .indexfilm-wrapper {
+        height: 100%;
+      }
+      .index-content {
+        grid-template-rows: none;
+      }
+      @media screen and (min-width: 750px) {
+        .indexfilm-wrapper {
+          overflow-y: auto;
         }
-        @media screen and (min-width: 750px) {
-            .indexfilm-wrapper {overflow-y: auto}
-            /* Hide scrollbar for Chrome, Safari and Opera */
-            .indexfilm-wrapper::-webkit-scrollbar {
-                display: none;
-            }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .indexfilm-wrapper::-webkit-scrollbar {
+          display: none;
+        }
 
-            /* Hide scrollbar for IE, Edge and Firefox */
-            .indexfilm-wrapper {
-                -ms-overflow-style: none;  /* IE and Edge */
-                scrollbar-width: none;  /* Firefox */
-            }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .indexfilm-wrapper {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
         }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header>
-            <section class="header-wrapper">
-                <span><a href="index">matthew koebele</a></span>
-                <img id="hamburger" src="media/hamburger.svg">
-            </section>
-            <nav class="mobile-nav">
-                <ul class="mnav-wrapper">
-                    <span id="mfilm-dd">film <img src="media/arrow-expand.svg"></span>
-                    <div class="mfilm-wrapper">
-                        <a href="halandjulie" class="f-links">Hal and Julie</a>
-                        <a href="robster" class="f-links">Robster</a>
-                        <a href="right-to-remain-silent" class="f-links">Right to Remain Silent</a>
-                        <a href="rooftop" class="f-links">Rooftop</a>
-                        <a href="adayalone" class="f-links">a Day Alone</a>
-                        <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
-                    </div>
-                    <a href="photos">photos</a>
-                    <a href="bio">bio</a>
-                </ul>
-            </nav>
-        </header>
-        <section class="index-content">
-            <div class="index-wrapper">
-                <p></p>
-                <nav class="desktop-nav">
-                    <ul class="dnav-wrapper">
-                        <span id="dfilm-dd">film <img src="media/arrow-expand.svg"></span>
-                        <div class="dfilm-wrapper">
-                            <a href="halandjulie" class="f-links">Hal and Julie</a>
-                            <a href="robster" class="f-links">Robster</a>
-                            <a href="right-to-remain-silent" class="f-links">Right to Remain Silent</a>
-                            <a href="rooftop" class="f-links">Rooftop</a>
-                            <a href="adayalone" class="f-links">a Day Alone</a>
-                            <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
-                        </div>
-                        <a href="photos">photos</a>
-                        <a href="bio">bio</a>
-                    </ul>
-                </nav>
-            </div>
-            <div class="indexfilm-wrapper">
-                <div class="gallery-wrapper">
-                    <div onclick="clearInterval(refreshIntervalID)" class="gallery">
-                        <img src="media/rooftop_1_1000.webp">
-                        <img src="media/rooftop_2_1000.webp">
-                        <img src="media/rooftop_3_1000.webp">
-                        <img src="media/rooftop_4_1000.webp">
-                        <img src="media/rooftop_5_1000.webp">
-                        <img src="media/rooftop_6_1000.webp">
-                        <img src="media/rooftop_7_1000.webp">
-                        <img src="media/rooftop_8_1000.webp">
-                        <img src="media/rooftop_9_1000.webp">
-                    </div>
-                    <span id="gallery-counter">
-                        <div id="num">#</div>/<div id="total">total</div>
-                    </span>
-                </div>
-                <div class="text-wrapper">
-                    <p class="txt tpt1">
-                        <span>GODDAMN THE NEIGHBORS HATE US<a id="filmlink" target="_blank" href="https://www.youtube.com/watch?v=xboWx7sQzO4">(watch)</a></span><br>
-                        <br>
-                        Directed by Matthew Koebele<br>
-                        Shot by Cole Fletchell-Silva<br>
-                        With Matthew Koebele & Luica Camon<br>
-                        <br>
-                        Kodak 500T 16mm shot at 50
-                    </p>
-                    <p class="txt tpt2">
-                        <br>
-                    </p>
-                </div>
-            </div>
+      <header>
+        <section class="header-wrapper">
+          <span><a href="index">matthew koebele</a></span>
+          <img id="hamburger" src="media/hamburger.svg" />
         </section>
+        <nav class="mobile-nav">
+          <ul class="mnav-wrapper">
+            <span id="mfilm-dd">film <img src="media/arrow-expand.svg" /></span>
+            <div class="mfilm-wrapper">
+              <a href="classic-water" class="f-links">Classic Water</a>
+              <a href="halandjulie" class="f-links">Hal and Julie</a>
+              <a href="robster" class="f-links">Robster</a>
+              <a href="right-to-remain-silent" class="f-links"
+                >Right to Remain Silent</a
+              >
+              <a href="rooftop" class="f-links">Rooftop</a>
+              <a href="adayalone" class="f-links">a Day Alone</a>
+              <a href="dadcomestodinner" class="f-links">Dad Comes to Dinner</a>
+            </div>
+            <a href="photos">photos</a>
+            <a href="bio">bio</a>
+          </ul>
+        </nav>
+      </header>
+      <section class="index-content">
+        <div class="index-wrapper">
+          <p></p>
+          <nav class="desktop-nav">
+            <ul class="dnav-wrapper">
+              <span id="dfilm-dd"
+                >film <img src="media/arrow-expand.svg"
+              /></span>
+              <div class="dfilm-wrapper">
+                <a href="classic-water" class="f-links">Classic Water</a>
+                <a href="halandjulie" class="f-links">Hal and Julie</a>
+                <a href="robster" class="f-links">Robster</a>
+                <a href="right-to-remain-silent" class="f-links"
+                  >Right to Remain Silent</a
+                >
+                <a href="rooftop" class="f-links">Rooftop</a>
+                <a href="adayalone" class="f-links">a Day Alone</a>
+                <a href="dadcomestodinner" class="f-links"
+                  >Dad Comes to Dinner</a
+                >
+              </div>
+              <a href="photos">photos</a>
+              <a href="bio">bio</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="indexfilm-wrapper">
+          <div class="gallery-wrapper">
+            <div class="gallery">
+              <img src="media/rooftop_1_1000.webp" />
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <p class="txt tpt1">
+              <span
+                >GODDAMN THE NEIGHBORS HATE US (2024)<a
+                  id="filmlink"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=xboWx7sQzO4"
+                  ><u>watch</u></a
+                ></span
+              ><br />
+              <br />
+              Directed by Matthew Koebele<br />
+              Shot by Cole Fletchell-Silva<br />
+              With Matthew Koebele & Luica Camon<br />
+              <br />
+              Kodak 500T 16mm shot at 50
+            </p>
+            <p class="txt tpt2">
+              <br />
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="hamburger.js"></script>
     <script src="expand.js"></script>
     <script src="gallery.js"></script>
-</body>
+  </body>
 </html>
+
